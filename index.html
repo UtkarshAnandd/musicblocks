@@ -1,0 +1,104 @@
+<!doctype html>
+<!--
+  Copyright (c) 2026 Sugar Labs
+
+  This program is free software: you can redistribute it and/or modify it
+  under the terms of the GNU Affero General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or (at your
+  option) any later version.
+
+  This program is distributed in the hope that it will be useful, but WITHOUT
+  ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+  FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License
+  for more details.
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Contributor Issue Context · Design preview</title>
+        <script>
+            (function () {
+                var preference = "system";
+                try {
+                    var stored = window.localStorage.getItem("ic-theme");
+                    if (stored === "light" || stored === "dark") {
+                        preference = stored;
+                    }
+                } catch (error) {
+                    preference = "system";
+                }
+                var dark =
+                    preference === "dark" ||
+                    (preference === "system" &&
+                        window.matchMedia &&
+                        window.matchMedia("(prefers-color-scheme: dark)").matches);
+                document.documentElement.setAttribute("data-theme", dark ? "dark" : "light");
+            })();
+        </script>
+        <link rel="stylesheet" href="issue-context.css" />
+        <script src="issue-context.js" defer></script>
+    </head>
+    <body>
+        <header class="app-bar">
+            <div class="app-bar-inner">
+                <p class="breadcrumb">
+                    <span class="breadcrumb-root">Music Blocks</span>
+                    <span class="breadcrumb-sep">/</span>
+                    <span class="d-only">Contributor Issue Context</span>
+                    <span class="m-only">Issue context</span>
+                </p>
+                <div class="theme-switcher" role="group" aria-label="Theme"></div>
+            </div>
+        </header>
+
+        <main id="main">
+            <section class="page-intro">
+                <div class="intro-text">
+                    <h1>Before you start working on an issue</h1>
+                    <p class="intro-description">
+                        On GitHub, a contributor comments <code>/context</code> on an open issue. A
+                        GitHub Action then posts one Issue Context comment on that issue, or
+                        refreshes it, showing existing pull requests, recent discussion, and other
+                        GitHub context. This page previews that comment.
+                    </p>
+                    <ol class="flow-steps" aria-label="How it works on GitHub">
+                        <li>Open an issue on GitHub</li>
+                        <li>Comment exactly <code>/context</code></li>
+                        <li>A GitHub Action posts or refreshes the Issue Context comment</li>
+                        <li>Review the context, then decide how to proceed</li>
+                    </ol>
+                    <p class="principles">
+                        This is informational only. It does not assign or reserve the issue.
+                        Alternative implementations remain welcome.
+                    </p>
+                    <p class="demo-notice" role="note">
+                        Design preview with illustrative example data, not live GitHub data. The
+                        production feature is the <code>/context</code> issue comment, not this
+                        page.
+                    </p>
+                </div>
+                <form class="issue-selector" role="search" id="issue-selector" novalidate>
+                    <label for="issue-lookup">Example issue number</label>
+                    <div class="issue-selector-controls">
+                        <input
+                            id="issue-lookup"
+                            type="text"
+                            inputmode="numeric"
+                            autocomplete="off"
+                            placeholder="e.g. 1"
+                            aria-describedby="issue-lookup-hint"
+                        />
+                        <button type="submit" class="button">Go</button>
+                    </div>
+                    <p id="issue-lookup-hint" class="issue-selector-hint">
+                        Enter an example issue number to preview its Issue Context comment.
+                    </p>
+                </form>
+            </section>
+
+            <div id="not-found-slot"></div>
+            <div id="report-region"></div>
+        </main>
+    </body>
+</html>

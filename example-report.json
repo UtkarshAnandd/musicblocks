@@ -1,0 +1,396 @@
+{
+    "schema_version": 1,
+    "repository": "sugarlabs/musicblocks",
+    "data_as_of": "2026-09-20T09:00:00Z",
+    "issues": [
+        {
+            "issue": {
+                "number": 1,
+                "title": "Example: tempo widget skips the first beat after resuming",
+                "url": null,
+                "state": "open",
+                "author": "example-reporter",
+                "labels": ["Issue-Bug"],
+                "milestone": null,
+                "created_at": "2026-09-01T08:00:00Z",
+                "updated_at": "2026-09-19T12:00:00Z",
+                "participant_count": 3
+            },
+            "data_as_of": "2026-09-20T09:00:00Z",
+            "coverage": {
+                "formal_links": "complete",
+                "text_references": "complete",
+                "open_prs_scanned": 4,
+                "merge_state_unknown_count": 0
+            },
+            "formal_open_prs": [
+                {
+                    "number": 11,
+                    "title": "Example: keep the first beat when the tempo widget resumes",
+                    "url": null,
+                    "state": "open",
+                    "is_draft": false,
+                    "author": "example-ben",
+                    "created_at": "2026-09-10T10:00:00Z",
+                    "updated_at": "2026-09-18T10:00:00Z"
+                }
+            ],
+            "text_reference_prs": [],
+            "previous_closed_unmerged_prs": [
+                {
+                    "number": 9,
+                    "title": "Example: earlier attempt at resuming tempo",
+                    "url": null,
+                    "state": "closed",
+                    "is_draft": false,
+                    "author": "example-dana",
+                    "created_at": "2026-09-10T10:00:00Z",
+                    "updated_at": "2026-08-02T10:00:00Z"
+                }
+            ],
+            "recent_human_discussion": [
+                {
+                    "author": "example-ben",
+                    "url": "https://example.invalid/issues/1#comment-1",
+                    "created_at": "2026-09-15T09:30:00Z",
+                    "excerpt": "I'm working on this in the linked PR; feedback on the approach is welcome."
+                },
+                {
+                    "author": "example-chen",
+                    "url": "https://example.invalid/issues/1#comment-2",
+                    "created_at": "2026-09-17T14:10:00Z",
+                    "excerpt": "The same thing happens after changing the time signature."
+                }
+            ],
+            "contributor_intent": [
+                {
+                    "author": "example-ben",
+                    "url": "https://example.invalid/issues/1#comment-1",
+                    "created_at": "2026-09-15T09:30:00Z"
+                }
+            ],
+            "assignees": [
+                {
+                    "login": "example-ben"
+                }
+            ],
+            "limitations": [
+                {
+                    "code": "formal_links_scope",
+                    "message": "Formal PRs come from GitHub's formal issue/PR links, up to 20 per issue."
+                },
+                {
+                    "code": "text_references_scope",
+                    "message": "Open PR titles and descriptions are matched for Fixes, Fix, Closes, Close, Resolves, Resolve, Related to, Partially addresses, and Partially addressed followed by #N. References in HTML comments, code blocks, quoted lines, commits, review comments, or other repositories are not checked."
+                },
+                {
+                    "code": "comments_bounded",
+                    "message": "Only the last 5 comments per issue are retrieved."
+                },
+                {
+                    "code": "recent_human_window",
+                    "message": "Comments by GitHub User accounts from the last 30 days count as recent human discussion; Bot and App comments are excluded."
+                },
+                {
+                    "code": "intent_heuristic",
+                    "message": "Contributor intent is a conservative first-person phrase heuristic that can miss or misread intent. It is a neutral signal only."
+                },
+                {
+                    "code": "assignees_metadata_only",
+                    "message": "Assignees are GitHub metadata only; they do not restrict contribution."
+                },
+                {
+                    "code": "absence_not_evidence",
+                    "message": "Finding no PR in this report is not evidence about whether others are working on an issue."
+                }
+            ]
+        },
+        {
+            "issue": {
+                "number": 2,
+                "title": "Example: keyboard shortcut help lists a removed command",
+                "url": null,
+                "state": "open",
+                "author": "example-reporter",
+                "labels": ["Issue-Documentation"],
+                "milestone": null,
+                "created_at": "2026-09-01T08:00:00Z",
+                "updated_at": "2026-09-19T12:00:00Z",
+                "participant_count": 2
+            },
+            "data_as_of": "2026-09-20T09:00:00Z",
+            "coverage": {
+                "formal_links": "complete",
+                "text_references": "complete",
+                "open_prs_scanned": 4,
+                "merge_state_unknown_count": 0
+            },
+            "formal_open_prs": [],
+            "text_reference_prs": [
+                {
+                    "number": 12,
+                    "title": "Example: update the keyboard shortcut help text",
+                    "url": null,
+                    "state": "open",
+                    "is_draft": false,
+                    "author": "example-gus",
+                    "created_at": "2026-09-10T10:00:00Z",
+                    "updated_at": "2026-09-18T10:00:00Z"
+                }
+            ],
+            "previous_closed_unmerged_prs": [],
+            "recent_human_discussion": [
+                {
+                    "author": "example-chen",
+                    "url": "https://example.invalid/issues/2#comment-1",
+                    "created_at": "2026-09-12T16:45:00Z",
+                    "excerpt": "The removed command is still listed under the Edit section."
+                }
+            ],
+            "contributor_intent": [],
+            "assignees": [],
+            "limitations": [
+                {
+                    "code": "formal_links_scope",
+                    "message": "Formal PRs come from GitHub's formal issue/PR links, up to 20 per issue."
+                },
+                {
+                    "code": "text_references_scope",
+                    "message": "Open PR titles and descriptions are matched for Fixes, Fix, Closes, Close, Resolves, Resolve, Related to, Partially addresses, and Partially addressed followed by #N. References in HTML comments, code blocks, quoted lines, commits, review comments, or other repositories are not checked."
+                },
+                {
+                    "code": "comments_bounded",
+                    "message": "Only the last 5 comments per issue are retrieved."
+                },
+                {
+                    "code": "recent_human_window",
+                    "message": "Comments by GitHub User accounts from the last 30 days count as recent human discussion; Bot and App comments are excluded."
+                },
+                {
+                    "code": "intent_heuristic",
+                    "message": "Contributor intent is a conservative first-person phrase heuristic that can miss or misread intent. It is a neutral signal only."
+                },
+                {
+                    "code": "assignees_metadata_only",
+                    "message": "Assignees are GitHub metadata only; they do not restrict contribution."
+                },
+                {
+                    "code": "absence_not_evidence",
+                    "message": "Finding no PR in this report is not evidence about whether others are working on an issue."
+                }
+            ]
+        },
+        {
+            "issue": {
+                "number": 3,
+                "title": "Example: add tooltip text to the pitch slider",
+                "url": null,
+                "state": "open",
+                "author": "example-reporter",
+                "labels": ["Issue-Enhancement"],
+                "milestone": null,
+                "created_at": "2026-09-01T08:00:00Z",
+                "updated_at": "2026-09-19T12:00:00Z",
+                "participant_count": 3
+            },
+            "data_as_of": "2026-09-20T09:00:00Z",
+            "coverage": {
+                "formal_links": "complete",
+                "text_references": "complete",
+                "open_prs_scanned": 4,
+                "merge_state_unknown_count": 0
+            },
+            "formal_open_prs": [],
+            "text_reference_prs": [],
+            "previous_closed_unmerged_prs": [],
+            "recent_human_discussion": [
+                {
+                    "author": "example-dana",
+                    "url": "https://example.invalid/issues/3#comment-1",
+                    "created_at": "2026-09-08T11:00:00Z",
+                    "excerpt": "Should the tooltip show the note name or the frequency?"
+                },
+                {
+                    "author": "example-reporter",
+                    "url": "https://example.invalid/issues/3#comment-2",
+                    "created_at": "2026-09-09T08:20:00Z",
+                    "excerpt": "The note name seems more useful for beginners."
+                }
+            ],
+            "contributor_intent": [],
+            "assignees": [],
+            "limitations": [
+                {
+                    "code": "formal_links_scope",
+                    "message": "Formal PRs come from GitHub's formal issue/PR links, up to 20 per issue."
+                },
+                {
+                    "code": "text_references_scope",
+                    "message": "Open PR titles and descriptions are matched for Fixes, Fix, Closes, Close, Resolves, Resolve, Related to, Partially addresses, and Partially addressed followed by #N. References in HTML comments, code blocks, quoted lines, commits, review comments, or other repositories are not checked."
+                },
+                {
+                    "code": "comments_bounded",
+                    "message": "Only the last 5 comments per issue are retrieved."
+                },
+                {
+                    "code": "recent_human_window",
+                    "message": "Comments by GitHub User accounts from the last 30 days count as recent human discussion; Bot and App comments are excluded."
+                },
+                {
+                    "code": "intent_heuristic",
+                    "message": "Contributor intent is a conservative first-person phrase heuristic that can miss or misread intent. It is a neutral signal only."
+                },
+                {
+                    "code": "assignees_metadata_only",
+                    "message": "Assignees are GitHub metadata only; they do not restrict contribution."
+                },
+                {
+                    "code": "absence_not_evidence",
+                    "message": "Finding no PR in this report is not evidence about whether others are working on an issue."
+                }
+            ]
+        },
+        {
+            "issue": {
+                "number": 4,
+                "title": "Example: palette search ignores accented characters",
+                "url": null,
+                "state": "open",
+                "author": "example-reporter",
+                "labels": ["Issue-Bug"],
+                "milestone": null,
+                "created_at": "2026-09-01T08:00:00Z",
+                "updated_at": "2026-09-02T08:00:00Z",
+                "participant_count": 1
+            },
+            "data_as_of": "2026-09-20T09:00:00Z",
+            "coverage": {
+                "formal_links": "complete",
+                "text_references": "complete",
+                "open_prs_scanned": 4,
+                "merge_state_unknown_count": 0
+            },
+            "formal_open_prs": [],
+            "text_reference_prs": [],
+            "previous_closed_unmerged_prs": [],
+            "recent_human_discussion": [],
+            "contributor_intent": [],
+            "assignees": [],
+            "limitations": [
+                {
+                    "code": "formal_links_scope",
+                    "message": "Formal PRs come from GitHub's formal issue/PR links, up to 20 per issue."
+                },
+                {
+                    "code": "text_references_scope",
+                    "message": "Open PR titles and descriptions are matched for Fixes, Fix, Closes, Close, Resolves, Resolve, Related to, Partially addresses, and Partially addressed followed by #N. References in HTML comments, code blocks, quoted lines, commits, review comments, or other repositories are not checked."
+                },
+                {
+                    "code": "comments_bounded",
+                    "message": "Only the last 5 comments per issue are retrieved."
+                },
+                {
+                    "code": "recent_human_window",
+                    "message": "Comments by GitHub User accounts from the last 30 days count as recent human discussion; Bot and App comments are excluded."
+                },
+                {
+                    "code": "intent_heuristic",
+                    "message": "Contributor intent is a conservative first-person phrase heuristic that can miss or misread intent. It is a neutral signal only."
+                },
+                {
+                    "code": "assignees_metadata_only",
+                    "message": "Assignees are GitHub metadata only; they do not restrict contribution."
+                },
+                {
+                    "code": "absence_not_evidence",
+                    "message": "Finding no PR in this report is not evidence about whether others are working on an issue."
+                }
+            ]
+        },
+        {
+            "issue": {
+                "number": 5,
+                "title": "Example: drum sample preview plays twice",
+                "url": null,
+                "state": "open",
+                "author": "example-reporter",
+                "labels": ["Issue-Bug"],
+                "milestone": null,
+                "created_at": "2026-09-01T08:00:00Z",
+                "updated_at": "2026-09-19T12:00:00Z",
+                "participant_count": 4
+            },
+            "data_as_of": "2026-09-20T09:00:00Z",
+            "coverage": {
+                "formal_links": "complete",
+                "text_references": "complete",
+                "open_prs_scanned": 4,
+                "merge_state_unknown_count": 0
+            },
+            "formal_open_prs": [
+                {
+                    "number": 14,
+                    "title": "Example: stop the duplicate preview trigger",
+                    "url": null,
+                    "state": "open",
+                    "is_draft": false,
+                    "author": "example-emil",
+                    "created_at": "2026-09-10T10:00:00Z",
+                    "updated_at": "2026-09-18T10:00:00Z"
+                },
+                {
+                    "number": 15,
+                    "title": "Example: debounce drum sample preview",
+                    "url": null,
+                    "state": "open",
+                    "is_draft": true,
+                    "author": "example-fay",
+                    "created_at": "2026-09-10T10:00:00Z",
+                    "updated_at": "2026-09-18T10:00:00Z"
+                }
+            ],
+            "text_reference_prs": [],
+            "previous_closed_unmerged_prs": [],
+            "recent_human_discussion": [
+                {
+                    "author": "example-emil",
+                    "url": "https://example.invalid/issues/5#comment-1",
+                    "created_at": "2026-09-16T10:05:00Z",
+                    "excerpt": "Two PRs now take this on; a review of either is welcome."
+                }
+            ],
+            "contributor_intent": [],
+            "assignees": [],
+            "limitations": [
+                {
+                    "code": "formal_links_scope",
+                    "message": "Formal PRs come from GitHub's formal issue/PR links, up to 20 per issue."
+                },
+                {
+                    "code": "text_references_scope",
+                    "message": "Open PR titles and descriptions are matched for Fixes, Fix, Closes, Close, Resolves, Resolve, Related to, Partially addresses, and Partially addressed followed by #N. References in HTML comments, code blocks, quoted lines, commits, review comments, or other repositories are not checked."
+                },
+                {
+                    "code": "comments_bounded",
+                    "message": "Only the last 5 comments per issue are retrieved."
+                },
+                {
+                    "code": "recent_human_window",
+                    "message": "Comments by GitHub User accounts from the last 30 days count as recent human discussion; Bot and App comments are excluded."
+                },
+                {
+                    "code": "intent_heuristic",
+                    "message": "Contributor intent is a conservative first-person phrase heuristic that can miss or misread intent. It is a neutral signal only."
+                },
+                {
+                    "code": "assignees_metadata_only",
+                    "message": "Assignees are GitHub metadata only; they do not restrict contribution."
+                },
+                {
+                    "code": "absence_not_evidence",
+                    "message": "Finding no PR in this report is not evidence about whether others are working on an issue."
+                }
+            ]
+        }
+    ]
+}
